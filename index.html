@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipes</title>
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/index_style.css" />
+  <script src="js/index.js" defer></script>
+</head>
+
+<body>
+
+  <div class="nav">
+    <ul class="container">
+      <li class="logo">
+        <a class="logo-img" href="#"><img
+            src="images/logo.jpg"></a>
+      </li>
+      <li>
+        <a href="#">Meat</a>
+      </li>
+      <li>
+        <a href="#">Chicken</a>
+      </li>
+      <li>
+        <a href="#">Pasta</a>
+      </li>
+      <li>
+        <a href="#">Rice</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container recipes">
+    <h2 class="recipes-heading">Recipes</h2>
+    <p>(please note:the API used here is on the free plan, so more than 5 requests/min causes the server to delay or
+      even deny the response)</p>
+    <div class="recipes-search">
+      <input id="searchInp" type="text" placeholder="search for">
+      <i class="fas fa-arrow-right" id="search-button"></i>
+      <i class="fas fa-filter" id="filters-button"><span></span></i>
+      <div class="filters-modal-layer"></div>
+      <div class="filters-modal">
+        <ul>
+          <li>
+            <input type="checkbox" name="health" value="alcohol-free">
+            <label>Alchol-Free</label>
+          </li>
+          <li>
+            <input type="checkbox" name="health" value="vegan">
+            <label>Vegan</label>
+          </li>
+          <li>
+            <input type="checkbox" name="health" value="vegetarian">
+            <label>Vegetarian</label>
+          </li>
+          <li>
+            <input type="checkbox" name="health" value="peanut-free">
+            <label>Peanut-Free</label>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <input type="checkbox" name="diet" value="balanced">
+            <label>Balanced</label>
+          </li>
+          <li>
+            <input type="checkbox" name="diet" value="high-protein">
+            <label>High-Protein</label>
+          </li>
+          <li>
+            <input type="checkbox" name="diet" value="low-carb">
+            <label>Low-Carb</label>
+          </li>
+          <li>
+            <input type="checkbox" name="diet" value="low-fat">
+            <label>Low-Fat</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="recipes-row">
+
+    </div>
+
+    <div class="lightbox-container">
+      <div class="lightbox-item">
+        <i class="fas fa-arrow-left" id="prev-button"></i>
+        <div class="recipe-details">
+
+        </div>
+        <i class="fas fa-arrow-right" id="next-button"></i>
+        <i class="fas fa-times" id="close-button"></i>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
